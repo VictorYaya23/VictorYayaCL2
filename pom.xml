@@ -7,6 +7,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>VictorYayaCL2 Maven Webapp</name>
   <url>http://maven.apache.org</url>
+   <properties>
+
+ <maven.compiler.source>1.8</maven.compiler.source>
+
+ <maven.compiler.target>1.8</maven.compiler.target>
+
+ </properties>
   <dependencies>
 	  <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 <dependency>
@@ -16,12 +23,39 @@
     <scope>provided</scope>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.1</version>
+</dependency>
+
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+   <!-- 
+
+mvnrepository.com/artifact/com.smartnews/maven-jpa-entity-generator-plugin/0.99.9
+
+ -->
+
+
+
+  <dependency>
+
+  <groupId>com.smartnews</groupId>
+
+  <artifactId>maven-jpa-entity-generator-plugin</artifactId>
+
+  <version>0.99.9</version>
+
+</dependency>   
+    
   </dependencies>
   <build>
     <finalName>VictorYayaCL2</finalName>
